@@ -108,12 +108,10 @@ g++ -m64 runner.cpp syscall_stub.obj -o runner.exe -lkernel32
 
 ## Resultados VirusTotal
 
-| Version | Detecciones |
-| sin evasion | 13/69 |
-https://www.virustotal.com/gui/file/2a3f871bc59a606c755815c2aa586896be19726155695f2a4ac4e20e44af32f6
-
-| XOR encryption | 4/71 |
-https://www.virustotal.com/gui/file/5442ef86a0ec6372e04e838a0c788463b4633d787dda476fa671c393a935a6b8
+| Version | Detecciones | Link |
+|---|---|---|
+| Sin evasion | 13/69 | [ver](https://www.virustotal.com/gui/file/2a3f871bc59a606c755815c2aa586896be19726155695f2a4ac4e20e44af32f6) |
+| + XOR encryption | 4/71 | [ver](https://www.virustotal.com/gui/file/5442ef86a0ec6372e04e838a0c788463b4633d787dda476fa671c393a935a6b8) |
 
 Los 4 restantes detectan por analisis heuristico del PE compilado con MinGW,
 no por el shellcode ni el comportamiento en runtime.
